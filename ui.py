@@ -8,12 +8,10 @@ from tkinter.ttk import *
 from tkinter import simpledialog
 from matplotlib.figure import Figure 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg,  NavigationToolbar2Tk
-from strategies import covered_call as  covered_call_payoff
-from strategies import strangle as strangle_payoff
+from options import covered_call as  covered_call_payoff
+from options import strangle as strangle_payoff
 
 import numpy as np 
-
-
 
 class App(tk.Frame):
     def __init__(self, master=None):
